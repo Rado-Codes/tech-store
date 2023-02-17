@@ -72,6 +72,10 @@ header h1, nav {
     width: 100%;
 }
 
+.btn-width {
+    width: 40%;
+}
+
 img {
     max-width: 100%;
 }
