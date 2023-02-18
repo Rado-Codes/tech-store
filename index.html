@@ -19,7 +19,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-center flex-grow-0" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse  flex-grow-0" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">home</a>
@@ -52,7 +52,7 @@
               </nav>
         </header>
         
-        <aside>
+        <!-- <aside>
             <h2>Shop by:</h2>
             <section>
                 <h3>Category</h3>
@@ -78,54 +78,156 @@
                 </ul>
             </section>
           
-        </aside>
-
-        <!--Main section to display products-->
+        </aside> -->
         <main>
-            <h2>All items:</h2>
-            <div class="product">
-                <a href="product-detail.html">
-                    <img src="images/controller.jpg" alt="game controller picture">
-                </a>
-                <h4><a href="product-detail.html">Game controller</a>&#127918;</h4>
-                <p>$ 79.95</p>
-                <p>Awesome game controller <br>for box!</p>    
-                <a href="" class="button">More info</a>
-                <a href="" class="button" id="position">Add To Cart</a>
-            </div>
+            <div class="container-fluid bg-light py-4">
+                <div class="row">
+                    <aside class="col-3 ">
+                        <h2>Shop by:</h2>
+                        <section>
+                            <h3>Category</h3>
+                            <hr>
+                            <ul>
+                                <li>All items</li>
+                                <li>Cameras</li>
+                                <li>Laptops</li>
+                                <li>Phones</li>
+                                <li>Accessories</li>
+                                <li>Other</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Price <span>($)</span></h3>
+                            <hr>
+                            <ul>
+                                <li>1-9</li>
+                                <li>10-29</li>
+                                <li>30-59</li>
+                                <li>60-99</li>
+                                <li>100 +</li>
+                            </ul>
+                        </section>
+                    </aside>
 
-            <div class="product">
-                <img src="images/headphones.jpg" alt="headphones">
-                <h4><a href="product-detail.html">White headphones</a></h4>
-                <p>$ 54.95</p>
-                <p>Awesome white headphones!</p>
-                <a href="" class="button">More Info</a>
-                <a href="" class="button">Add To Cart</a>
+
+
+                    <div class="col-9 bg-light">
+                        <h2>All items:</h2>
+                        <!-- <div class="d-flex flex-wrap"> -->
+                        <section class="container px-4 px-lg-5 mt-5">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                                <div class="col mb-5">
+                                    <div class="card text-center h-100">
+                                        <img src="images/controller.jpg" class="card-img-top" alt="game controller picture">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="product-detail.html">Game controller</a></h5>
+                                            <p>$ 79.95</p>
+                                            <p class="card-text">Awesome game controller <br> for box!</p>
+                                            <a href="product-detail.html" class="btn btn-outline-secondary btn-width">More info</a>
+                                            <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5">
+                                    <div class="card text-center h-100" >
+                                        <img src="images/headphones.jpg" class="card-img-top" alt="headphones">
+                                        <div class="card-body">
+                                            <h5 class="card-title">White headphones</h5>
+                                            <p>$ 54.95</p>
+                                            <p class="card-text">Awesome white headphones!</p>
+                                            <a href="product-detail.html" class="btn btn-outline-secondary btn-width">More info</a>
+                                            <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col mb-5">
+                                    <div class="card text-center h-100">
+                                        <img src="images/camera.jpg" class="card-img-top" alt="camera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canon camera</h5>
+                                            <p>$ 649.95</p>
+                                            <p class="card-text">Awesome camera <br> by Canon!</p>
+                                            <a href="product-detail.html" class="btn btn-outline-secondary btn-width">More info</a>
+                                            <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+
+
+
+
+
+                                <div class="col mb-5">
+                                    <div class="card text-center h-100">
+                                        <img src="images/microphone.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Microphone</h5>
+                                            <p>$ 119.95</p>
+                                            <p class="card-text">Awesome blue <br> Yeti Microphone!</p>
+                                            <a href="product-detail.html" class="btn btn-outline-secondary btn-width">More info</a>
+                                            <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+
+
+
+                                <div class="col mb-5">
+                                    <div class="card text-center h-100">
+                                        <img src="images/cables.jpg" class="card-img-top" alt="cables">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cables</h5>
+                                            <p>$ 10.95</p>
+                                            <p class="card-text">Awesome cables available <br> in different lengths!</p>
+                                            <a href="product-detail.html" class="btn btn-outline-secondary btn-width">More info</a>
+                                            <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+
+
+
+                    
+                                <div class="col mb-5">
+                                    <div class="card text-center h-100">
+                                        <img src="images/lenses.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Camera lenses</h5>
+                                            <p>$ 99.95</p>
+                                            <p class="card-text">Awesome camera <br> lenses!</p>
+                                            <a href="#" class="btn btn-outline-secondary btn-width">More info</a>
+                                            <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+        
+                            </div>
+
+                        
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="images/camera.jpg" alt="camera">
-                <a href="product-detail.html"><h4>Canon camera</h4></a></h4>
-                <p>$ 649.95</p>
-                <p>Awesome camera <br> by Canon!</p>
-                <a href="" class="button">More Info</a>
-                <a href="" class="button">Add To Cart</a>
-            </div>
-            <div class="product">
-                <img src="images/microphone.jpg" alt="microphone">
-                <h4><a href="product-detail.html">Microphone</a></h4>
-                <p>$ 119.95</p>
-                <p>Awesome blue <br> Yeti Microphone!</p>
-                <a href="" class="button">More Info</a>
-                <a href="" class="button">Add To Cart</a>
-            </div>
-            <div class="product">
-                <img src="images/cables.jpg" alt="cables">
-                <h4><a href="product-detail.html">Cables</a></h4>
-                <p>$ 10.95</p>
-                <p>Awesome cables available <br> in different lengths!</p>
-                <a href="product-detail.html"  class="button"> More Info </a>
-                <a href="" class="button">Add To Cart</a>
-            </div>
+        </main>
+        <!--Main section to display products-->
+        <!-- <main>
+           
+
+            
+            
+            
+            
             
             <div class="product">
                 <img src="images/lenses.jpg" alt="camera lenses">
@@ -134,30 +236,10 @@
                 <p>Awesome camera <br> lenses!</p>
                 <a href="" class="button">More Info</a>
                 <a href="" class="button">Add To Cart</a>
-            </div>
+            </div> -->
 
-            <div class="card text-center" style="width: 20rem;">
-                <img src="images/lenses.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Camera lenses</h5>
-                    <p>$ 99.95</p>
-                    <p class="card-text">Awesome camera <br> lenses!</p>
-                    <a href="#" class="btn btn-outline-secondary btn-width">More info</a>
-                    <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
-                </div>
-            </div>
             
-            <div class="card text-center" style="width: 20rem;">
-                <img src="images/lenses.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Camera lenses</h5>
-                    <p>$ 99.95</p>
-                    <p class="card-text">Awesome camera <br> lenses!</p>
-                    <a href="#" class="btn btn-outline-secondary btn-width">More info</a>
-                    <a href="#" class="btn btn-primary btn-width">Add To Cart</a>
-                </div>
-            </div>
-        </main>
+        <!-- </main> -->
         
         <!-- Modal -->
         <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">

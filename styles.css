@@ -191,19 +191,19 @@ tr:hover {
         width: 60%;
     }
 
-    main {
+    /* main {
         width: 68%;
         display: inline-block;
         padding: 10px;
-    }
+    } */
 
 
-    aside {
+    /* aside {
         width: 27%;     
         display: inline-block;
         vertical-align: top;
         padding: 10px;
-    }
+    } */
 
     .inline label {
         display: inline-block;
