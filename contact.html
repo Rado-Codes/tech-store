@@ -10,135 +10,240 @@
     </head>
     <body>
         <header>
-            <h1>Tech Store</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">shop</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                </ul>
-            </nav>   
-            <input type="search" placeholder="search...">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold fs-1" href="#">Tech Store</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  flex-grow-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                basket
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <form class="d-flex px-0" role="search">
+                            <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search">
+                            <button class="col-auto btn btn-primary" type="submit">Search</button>
+                        </form>    
+                  </div>
+                </div>
+              </nav>
         </header>
 
-        <aside>
-            <h2>Shop by:</h2>
-            <section>
-                <h3>Category</h3>
-                <hr>
-                <ul>
-                    <li>All items</li>
-                    <li>Cameras</li>
-                    <li>Laptops</li>
-                    <li>Phones</li>
-                    <li>Accessories</li>
-                    <li>Other</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Price <span>($)</span></h3>
-                <hr>
-                <ul>
-                    <li>1-9</li>
-                    <li>10-29</li>
-                    <li>30-59</li>
-                    <li>60-99</li>
-                    <li>100 +</li>
-                </ul>
-            </section>
-        </aside>
-
         <main>
-            <h2>Contact us:</h2>
+            <div class="container-fluid bg-light py-4">
+                <div class="row">
+                    <aside class="col-3">
+                        <div class="sticky-top">
+                            
+                             <h2>Shop by:</h2>
+                             <section>
+                                 <h3>Category</h3>
+                                 <hr>
+                                 <ul>
+                                     <li>All items</li>
+                                     <li>Cameras</li>
+                                     <li>Laptops</li>
+                                     <li>Phones</li>
+                                     <li>Accessories</li>
+                                     <li>Other</li>
+                                 </ul>
+                             </section>
+                             <section>
+                                 <h3>Price <span>($)</span></h3>
+                                 <hr>
+                                 <ul>
+                                    <li>1-9</li>
+                                     <li>10-29</li>
+                                     <li>30-59</li>
+                                     <li>60-99</li>
+                                    <li>100 +</li>
+                                 </ul>
+                            </section>
+                            
+                        </div>
+                    </aside>
+
+
+
+                    <div class="col-9 bg-light">
+                        <h2>Contact us:</h2>
+                        <form>
+                            
+                            <div class="row mb-3">
+                                <label for="name-form" class="col-sm-2 col-xl-1 col-form-label">Name:</label>
+                                <div class="col-sm-10 col-xl-11">
+                                    <div class="col-lg-6 col">
+                                        <input type="text" class="form-control w-100" id="name-form" placeholder="Enter your name" aria-describedby="nameHelp">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="email-form" class="col-sm-2 col-xl-1 col-form-label">Email:</label>
+                                <div class="col-sm-10 col-xl-11">
+                                    <div class="col-lg-6 col"> 
+                                        <input type="email" class="form-control w-100" id="email-form" placeholder="Enter your email" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <label for="form-message" class="col-sm-2 col-xl-1 col-form-label">Message:</label>
+                                <div class="col-sm-10 col-xl-11">
+                                    <div class="col-lg-6 col">
+                                        <textarea class="form-control w-100" id="form-message" rows="5" placeholder="Enter your message"></textarea>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="row mb-3">
+                                <label for="subject-form" class="col-sm-2 col-xl-1 col-form-label">Subject:</label>
+                                <div class="col-sm-10 col-xl-11">
+                                    <div class="col-lg-6 col">
+                                        <input class="form-control form-select w-100" list="subjects" id="subject-form" placeholder="Enter your subject">
+                                        <datalist id="subjects">
+                                            <option value="returns">
+                                            <option value="faulty item">
+                                            <option value="delivery">
+                                            <option value="order tracking">
+                                            <option value="advice">
+                                            <option value="other">
+                                        </datalist>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-div mb-3">
+                                <p>Subscribe to future offers by:</p>
+                                <label for="newsletter">Newsletter</label>
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="subscribe" value="newsletter" >
             
-            <form>
-                <div class="inline">
-                    <label for="name">Name:</label><input type="text" placeholder="Enter your name" id="name" name="name">
-                </div>
-
-                <div class="inline">
-                    <label for="email">Email:</label><input type="email" placeholder="Enter your email" id="email" name="email">
-                </div>
-
-                <div class="inline">
-                    <label for="message">Message:</label><textarea cols="30" rows="5" id="message" name="message"></textarea>  
-                </div>   
-
-                <!-- <div>
-                    <label for="subject">Subject</label>
-                    <select id="subject">
-                        <optgroup label="Product issues">
-                            <option value="returns">Returns</option>
-                            <option value="faulty_item">Faulty item</option>
-                        </optgroup>
-
-                        <optgroup label="Delivery">
-                            <option value="delivery">Delivery info</option>
-                            <option value="order_tracking">Tracking my order</option>
-                        </optgroup>
-
-                        <optgroup label="Other">
-                            <option value="advice">Advice</option>
-                            <option value="other">Other</option>
-                        </optgroup>
-                   
-                    </select>
-                </div> -->
-
-                <!-- Dropdown menu: -->
-                <div class="inline">
-                    <label for="subject">Subject:</label>
-                    <input type="text" list="subjects" id="subject" placeholder="Enter your subject">
-                    <datalist id="subjects">
-                        <option value="returns">
-                        <option value="faulty item">
-                        <option value="delivery">
-                        <option value="order tracking">
-                        <option value="advice">
-                        <option value="other">
-                    </datalist>
-                </div>
-
-                <div>
-                    <p>Subscribe to future offers by:</p>
-                    <label for="newsletter">Newsletter</label>
-                    <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
-
-                    <label for="email">Email</label>
-                    <input type="checkbox" id="email" name="subscribe" value="email">
-
-                    <label for="post">Post</label>
-                    <input type="checkbox" id="post" name="subscribe" value="post">
-                </div>
-
-                <div>
-                    <p>How would you like us to respond?</p>
-                    <label for="phoneResponse">Phone</label>
-                    <input type="radio" id="phoneResponse" name="response" val="phone">
-                    <label for="emailResponse">Email</label>
-                    <input type="radio" id="emailResponse" name="response" val="email">
-                </div>
-
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                    <!-- <button type="submit">Send message</button> -->
-                </div>
-            </form>
-            <iframe width="60%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=moma,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/INm4U2S7Vu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe> -->
+                                <label for="email">Email</label>
+                                <input type="checkbox" class="form-check-input" id="email" name="subscribe" value="email">
             
+                                <label for="post">Post</label>
+                                <input type="checkbox" class="form-check-input" id="post" name="subscribe" value="post">
+                            </div>
+
+                        
+                            <p>How would you like us to respond?</p>
+                            <div class="form-check-inline mb-3">
+                                <label for="emailResponse">Email</label>
+                                <input class="form-check-input" type="radio" id="emailResponse" name="response" val="email" checked>
+                            </div>
+                            <div class="form-check-inline mb-3">
+                                <label for="phoneResponse">Phone</label>
+                                <input class="form-check-input" type="radio" id="phoneResponse" name="response" val="phone">
+                            </div>
+                            
+
+                            <div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-primary">Reset</button>
+                            </div>
+                        </form>
+
+                    
+                        <iframe width="95%" height="450" style="border:0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=moma,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                    </div>
+                </div>
+            </div>
         </main>
+        
+       
+        
+        <!-- Modal -->
+        <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up for exclusive offers!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    
+                        <form>
+                            <div class="mb-2">
+                                <label for="exampleInputEmail1" class="form-label">Your name</label>
+                                <input type="text" class="form-control  w-100" id="nameInput" aria-describedby="nameInput" placeholder="Enter your name">
+                            </div>
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">shop</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-               </ul> 
-            </nav>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Your email</label>
+                                <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                                <div id="emailHelp" class="form-text ">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="exampleFormControlTextarea1" class="form-label" >Your address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your address"></textarea>
+                            </div> 
+                            
+                        </form>
+
+
+                    </div>
+
+                    <div class="modal-footer justify-content-between">
+                        
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="contactEmail" checked>
+                            <label class="form-check-label" for="contactEmail">
+                              Contact by email?
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="contactPost" >
+                            <label class="form-check-label" for="contactPost">
+                              Contact by post?
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class=" container-fluid py-4 bg-dark text-white text-end">
+             <div class="row align-items-center ">
+                 <div class="d-flex col-7 text-center">
+                    <span class="pe-4">&copy; Tech Store</span>
+                    <span class="px-2 "><a href="index.html">home</a></span>
+                    <span class="px-2"><a href="">shop</a></span>
+                    <span class="px-2"><a href="contact.html">contact us</a></span>
+                </div>
+                <div class="col-5 ">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#subscribeModal">Sign up here!</button> 
+                </div>
+            </div>
         </footer>
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
